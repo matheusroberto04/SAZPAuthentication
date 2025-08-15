@@ -74,6 +74,8 @@ No arquivo settings.py, adicione:
 
 `SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET=SUA_CLIENT_SECRET`
 
+Caso tenha duvidas em como conseguir seu CLIENT ID e seu CLIENTE SECRET basta pedir ajuda a uma IA ( ChatGpt ) para que ele forneça as informações necessárias, pois cada provedor tem uma maneira diferente de conseguir suas chaves!
+
 ### 5️⃣ Aplicar migrations
 
 `python manage.py migrate`
