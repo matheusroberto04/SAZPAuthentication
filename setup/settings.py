@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.google',
     'django.contrib.sites',
 ]
 
@@ -145,6 +146,13 @@ SOCIALACCOUNT_PROVIDERS = {
             'secret': 'cf88ca519c0550a67d87b396bc3d08be091b46ee',
             'key': ''
         }
+    },
+        'google': {
+        'APP': {
+            'client_id': '638183127589-992qbmjai668pbbj4jcinp8ogmlo97ab.apps.googleusercontent.com',
+            'secret': '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',
+            'key': ''
+        }
     }
 }
 
@@ -155,3 +163,7 @@ SOCIALACCOUNT_LOGIN_ON_GET = True
 ACCOUNT_LOGOUT_ON_GET = True
 
 LOGOUT_REDIRECT_URL = '/'
+
+GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
+
+GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
